@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\mirda\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\mirda\\.nuget\\packages"
+    ]
+  }
+}
