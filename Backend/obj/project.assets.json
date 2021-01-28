@@ -5767,11 +5767,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj",
+      "projectUniqueName": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj",
       "projectName": "Backend",
-      "projectPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj",
+      "projectPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj",
       "packagesPath": "C:\\Users\\mirda\\.nuget\\packages\\",
-      "outputPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\obj\\",
+      "outputPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mirda\\AppData\\Roaming\\NuGet\\NuGet.Config",

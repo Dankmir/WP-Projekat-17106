@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RHpLUP3T1eVmbQ+7OFUcoXAAmzRMVcJaqj2w33jpgtFSGL7vHigt5c9qpC3YGPPNj7207BDVAEXT9MeWV8UzfQ==",
+  "dgSpecHash": "qYvrQOJ8cF+A1ktJtgxtf3IiCygGwzHSSxV8JxQExdZIon3OpbrizqEucJfdsYnmdDutoaFZhnwKDVcBC97DNA==",
   "success": true,
-  "projectFilePath": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj",
+  "projectFilePath": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mirda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mirda\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

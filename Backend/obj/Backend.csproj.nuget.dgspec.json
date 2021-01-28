@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj": {}
+    "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj": {}
   },
   "projects": {
-    "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj": {
+    "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj",
+        "projectUniqueName": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj",
         "projectName": "Backend",
-        "projectPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\Backend.csproj",
+        "projectPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\Backend.csproj",
         "packagesPath": "C:\\Users\\mirda\\.nuget\\packages\\",
-        "outputPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Backend\\obj\\",
+        "outputPath": "D:\\Fakultet\\TRECA\\Web programiranje\\Projekat\\Backend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\mirda\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -38,10 +38,6 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
-            "Microsoft.AspNetCore.Authentication.Certificate": {
-              "target": "Package",
-              "version": "[*, )"
-            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.2, )"
