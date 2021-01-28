@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="./css/main.css">
+
+        <title> Projekat </title>
+    </head>
+
+    <body>
+
+        <section>
+            <div class = "product-management">
+
+                <div class ="top">
+                    <h2 class = "close-button">x</h2>
+                </div>
+
+                <div class = "form-title">
+                    <h2>Product management</h2>
+                    <p>Add, update or delete products</p>
+                </div>
+
+                <div class="error-message">
+                    <p></p>
+                </div>
+
+                <div class = "form-container">
+                    <h2>Choose operation:</h2>
+                    <div class = "form-operation">
+                        <div>
+                            <label>Add</label>
+                            <input type="radio" name="operation" value="add" checked>
+                        </div>
+                        
+                        <div>
+                            <label>Update</label>
+                            <input type="radio" name="operation" value="update">
+                        </div>
+
+                        <div>
+                            <label>Delete</label>
+                            <input type="radio" name="operation" value = "delete">
+                        </div>
+                    </div>
+                    
+                    <form>
+                        <div id = "product-input">
+                            <label for="id">Product:</label>
+                            <select name="id" class = "product-select"></select>
+                        </div>
+
+                        <div id = "name-input">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" />
+                        </div>
+
+                        <div id = "description-input">
+                            <label for="description">Description:</label>
+                            <textarea name="description" rows="4" cols="40"></textarea>
+                        </div>
+
+                        <div id = "price-input">
+                            <label for="price">Price:</label>
+                            <input type="number" name="price" />
+                        </div>
+                    </form>
+
+                    <div class = "form-buttons">
+                        <button class = "submit-button"> Submit </button>
+                        <button class = "delete-button"> Delete </button>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class = "fullscreen-panel">
+            <div class = "dialog">
+                <div class = "check-mark">
+                    <img src="./img/check-mark.png" alt="">
+                </div>
+                
+                <div class = "confirm-text">
+                    <h2>Purchase confirmed!</h2>
+                    <h4>Total: <span id = "total-price"></span> rsd</h4>
+                    <h4>Food will arrive in approximately <span id = "arrival-time"></span> minutes</h4>
+                </div>
+                
+                <div class = "close-dialog">
+                    <button>Close</button>
+                </div>
+            </div>
+        </section>
+
+        <header class="navigation">
+            <div class="title-text">
+                <h2> Odnesi </h2>
+            </div>
+            <nav>
+                <ul>
+                    <li class = "change-restaurant-button">
+                        <select class = "restaurant-select"></select>
+                    </li>
+
+                    <li class = "mng-open-button"> Manage products </li>
+                    
+                    <li class = "cart-button">
+                        <img src="./img/shopping-cart.png" alt="">
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+        <section class = "main-content">
+
+            <div class = "main">
+                <div class = "title">
+                    <h2></h2>
+                    <p></p>
+                </div>
+
+                <div class = "product-list"></div> 
+
+            </div>
+
+            <div class = "side">
+                <div class = "cart">
+                    <div class = "cart-title">
+                        <h2>Cart</h2>
+                    </div>
+
+                    <div class = "cart-content"></div>
+
+                    <div class = "cart-total">
+                        <h3>Total: 0.00 rsd</h3>
+                    </div>
+
+                    <div class = "cart-checkout">
+                        <button>Checkout</button>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <footer>
+            <p>Дамир Жерић 17106</p>
+            <p>© ЕЛЕКТРОНСКИ ФАКУЛТЕТ У НИШУ.</p>
+            <p>Пројекат из ВЕБ програмирања</p>
+        </footer>
+
+        <script type = "module" src="./js/main.js"></script>
+    </body>
+</html>

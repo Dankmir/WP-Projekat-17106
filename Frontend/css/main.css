@@ -1,0 +1,624 @@
+* {
+    padding: 0;
+    margin: 0;
+
+    font-family: 'Roboto', sans-serif;
+}
+
+button:focus {outline:0;}
+
+button:hover {
+    cursor:pointer;
+}
+
+body {
+    background-color: #182131;
+    min-height: 100vh;
+}
+
+/* NAVIGATION */
+
+.navigation {
+    background-color: #E15546;
+    height: 40px;
+
+    position: sticky;
+    top: 0;
+}
+
+.navigation .title-text
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.title-text h2 {
+    padding-left: 16px;
+    color: #EAE4CC;
+    user-select: none;
+}
+
+.navigation nav
+{
+    width: 512px;
+    height: 100%;
+    user-select: none;
+    float : right;
+}
+
+ul {
+    list-style: none;
+    height: 100%;
+
+    display: flex;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    float: left;
+    
+    padding: 0 16px;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: #EAE4CC;
+    text-decoration: none;
+}
+
+nav ul li:hover {
+    cursor: pointer;
+}
+
+nav ul li img {
+    width: 32px;
+    height: 32px;
+    
+}
+
+
+.navigation .title-text h2::after {
+    content: '.com';
+    font-size: 14px;
+}
+
+.navigation .restaurant-select {
+    width: 192px;
+
+    background-color:#E15546; 
+    border: 2px dashed #EAE4CC;
+    color: #EAE4CC;
+    font-weight: bold;
+    outline: 0;
+}
+
+.navigation .restaurant-select option {
+    font-weight: bold;
+}
+
+/* ------------------------------------------------------- */
+
+
+
+/* MAIN CONTENT */
+
+.main-content {
+    display: flex;
+    min-height: 100vh;
+}
+
+.main {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    background-color:   #182335;
+}
+
+.side {
+    min-width: 320px;
+    
+    display: none;
+    justify-content: center;
+}
+
+
+.title {
+   width: 80%; 
+}
+
+
+.title h2 {
+    color: #EAE4CC;
+    font-size: 72px;
+    user-select: none;
+    padding-top: 32px;
+}
+
+.title h2::after {
+    
+    font-size: 18px;
+    color: #EEAF9D;
+}
+
+.title p {
+    color: #EEAF9DA0;
+    font-size: 20px;
+    user-select: none;
+    padding-left: 16px; 
+}
+
+/* CART */
+
+.cart {
+    width: 80%;
+    height: 400px;
+
+    position: sticky;
+    top: 72px;
+    
+    background-color: #b3483c;
+
+    border: 3px dashed #EAE4CC;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-title {
+    flex-grow: 0.5;
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+    color: #EAE4CC;
+    user-select: none;
+}
+
+.cart-content {
+    flex-grow: 8;
+    margin-left: 8px;
+    margin-right: 8px;
+    background-color: #182335;
+    overflow-y: scroll;
+    max-height: 256px;
+    user-select: none;
+}
+
+.cart-checkout {
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cart-checkout button {
+    width: 128px;
+    height: 40px;
+
+    border: 0;
+    color: #EAE4CC;
+    font-weight: bold;
+    background-color: #182335;
+
+    border: 2px dashed #EAE4CC;
+}
+
+.cart-checkout button:hover {
+    background-color: #EAE4CC;
+    color: #182335;
+}
+
+.cart-item {
+    display: flex;
+    height: 62px;
+    justify-content: space-between;
+    padding: 8px 8px;
+}
+
+.cart-item-name {
+    flex-grow: 1;
+    color: #EAE4CC;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cart-item-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #EAE4CC;
+}
+
+.cart-item-buttons button {
+    width: 24px;
+    height: 24px;
+
+    background-color: #E15546;
+    
+    color: #EAE4CC;
+    font-weight: bold;
+    user-select: none;
+    border: 0;
+    border-radius: 360px;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.cart-item-buttons button:hover {
+    background-color: #EAE4CC;
+    color: #E15546;
+}
+
+.cart-total {
+    padding-left: 16px;
+    padding-top: 8px;
+    color: #EAE4CC;
+}
+
+.cart-item-back {
+    background-color: #FFF1;
+}
+
+/* PRODUCT */
+
+.product-list {
+    width: 100%;
+    height: auto;
+
+    padding-top: 16px;
+
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+}
+
+.product {
+    min-width: 480px;
+    width: 80%;
+    height: 144px;
+
+    /*box-shadow: 4px 4px 6px #0007;*/
+    border: 3px dashed #EAE4CC;
+
+    margin: 8px;
+    color:#EAE4CC;
+    padding: 8px 8px;
+    background-color:#E15546;
+
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.product-image {
+    width: 144px;
+    height: 144px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    background-color: #182335;
+}
+
+.product-image img {
+    width: 132px;
+    height: 132px;
+}
+
+.product-info {
+    flex-grow: 1;
+    height: 144px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-info hr {
+    width: 80%;
+    border: 0;
+    border-bottom: 1px dashed #EAE4CC80;
+}
+
+.product-name, .product-description {
+    height: 72px; 
+}
+
+.product-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-description {
+    font-size: 1vw;
+    color: #EEAF9D;
+
+    width: 80%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-right: 8px;
+    
+}
+
+.product-cart h3 {
+    color: #EAE4CC;
+    margin-top: 16px;
+}
+
+.product-cart button {
+    width: 96px;
+    height: 48px;
+    user-select: none;
+    border: 0;
+    color: #FFF;
+    font-weight: bold;
+    background-color:  #182335;
+    border: 2px dashed #EAE4CC;
+}
+
+.product-cart button:hover
+{
+    background-color: #EAE4CC;
+}
+
+
+
+/* ------------------------------------------------------- */
+/* FOOTER */
+
+footer {
+    width: 100%;
+    height: 64px;
+
+    background-color: #182131;   
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+footer p {
+    color: #EAE4CC;
+}
+
+/* ------------------------------------------------------- */
+
+.fullscreen-panel {
+    z-index: 1;
+    position: fixed;
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000D;
+}
+
+.fullscreen-panel .dialog {
+    min-width: 512px;
+    min-height: 512px;
+
+    background-color:  #E15546;
+    
+    border: 3px dashed #EAE4CC;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fullscreen-panel .dialog .check-mark {
+    flex-grow: 6;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fullscreen-panel .dialog .check-mark img {
+    border: 3px dashed #EAE4CC;
+    border-radius: 128px;
+}
+
+.fullscreen-panel .dialog .confirm-text {
+    flex-grow: 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    color:#EAE4CC;
+}
+
+.fullscreen-panel .dialog .close-dialog {
+    flex-grow: 2;
+
+    display: flex;
+    justify-content: center;
+}
+
+.fullscreen-panel .dialog .close-dialog button {
+    width: 192px;
+    height: 64px;
+
+    border: 0;
+    color: #EAE4CC;
+    font-size: 24px;
+
+    background-color: #182335;
+    border: 2px dashed #EAE4CC;
+}
+
+.fullscreen-panel .dialog .close-dialog button:hover {
+    color: #182335;
+    background-color: #EAE4CC;
+}
+
+.fullscreen-panel .dialog img {
+    width: 192px;
+    height: 192px;
+}
+
+/* ------------------------------------------------------- */
+/* PRODUCT MANAGEMENT */
+
+.product-management {
+    z-index: 1;
+    position: fixed;
+    
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #000D;
+}
+
+.product-management .form-title
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 96px;
+    
+    text-align: center;
+    color: #FFF;
+    font-size: 52px;
+}
+
+.product-management .error-message {
+    height: 128px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: #E15546;
+    font-style: italic;
+    font-size: 24px;
+}
+
+.product-management .form-title p {
+    color: #7f8fa6;
+    font-size: 32px;
+}
+
+.product-management .form-container {
+    flex-grow: 1;
+    min-width: 360px;
+}
+
+.product-management .form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-management .form-container form div {
+    display: flex;
+    padding: 2px 0;
+}
+
+.product-management .form-container form div input,
+.product-management .form-container form div select {
+    width: 65%;
+}
+
+.form-buttons {
+    display: flex;
+    padding-top: 32px;
+}
+
+.product-management .form-container .submit-button,
+.product-management .form-container .delete-button {
+    width: 100%;
+    height: 32px;
+
+    border: 0;
+    font-weight: bold;
+}
+
+.product-management .form-container .delete-button {
+    display: none;
+}
+
+.product-management .form-container .delete-button {
+    background-color: rgb(165, 62, 62);
+}
+
+.product-management .form-container form label {
+    color: #FFF;
+    width: 35%;
+}
+
+.product-management .form-container form textarea {
+    height: 52px;
+    width: 65%;
+}
+
+.product-management .top {
+    width: 100%;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+}
+
+.product-management .top h2 {
+    width: 64px;
+
+    color: #FFF;
+    font-size: 40px;
+}
+
+.product-management .top h2:hover {
+    cursor: pointer;
+}
+
+.product-management .form-operation {
+    color : #FFF;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+    margin-top: 8px;
+}
+
+.product-management .form-container h2 {
+    color: #FFF;
+}
+
+.product-management .form-container form #product-input {
+    display: none;
+}
